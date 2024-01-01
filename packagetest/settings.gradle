@@ -1,0 +1,36 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url '..\\flutter_module\\build\\host\\outputs\\repo'
+        }
+        maven {
+            url System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com" + "/download.flutter.io"
+        }
+        gradlePluginPortal()
+//        flatDir {
+//            dirs 'app/src/main/libs'
+//        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven {
+            url '..\\flutter_module\\build\\host\\outputs\\repo'
+        }
+        maven {
+            url System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com" + "/download.flutter.io"
+        }
+        mavenCentral()
+//        flatDir {
+//            dirs 'app/src/main/libs'
+//        }
+    }
+}
+
+rootProject.name = "package test"
+include ':app'
