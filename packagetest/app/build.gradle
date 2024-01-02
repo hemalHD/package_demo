@@ -36,16 +36,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.10.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-//    implementation files('D:\\test projects\\flutter_test\\package_test\\test_new\\packagetest\\app\\src\\main\\libs\\flutter_debug-1.0.aar')
-//    implementation files('D:\\test projects\\flutter_test\\package_test\\test_new\\packagetest\\app\\src\\main\\libs\\flutter_profile-1.0.aar')
-//    implementation files('D:\\test projects\\flutter_test\\package_test\\test_new\\packagetest\\app\\src\\main\\libs\\flutter_release-1.0.aar')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    debugImplementation 'com.example.module.flutter_module:flutter_debug:1.0'
-//    implementation(name:'flutter_debug-1.0', ext:'aar')
-    profileImplementation 'com.example.module.flutter_module:flutter_profile:1.0'
-//    implementation(name:'flutter_profile-1.0', ext:'aar')
-    releaseImplementation 'com.example.module.flutter_module:flutter_release:1.0'
-//    implementation(name:'flutter_release-1.0', ext:'aar')
+    implementation(name: 'flutter_release-1.0', ext: 'aar')
+    implementation 'io.flutter:flutter_embedding_release:1.0.0-45f6e009110df4f34ec2cf99f63cf73b71b7a420'
+    implementation 'io.flutter:armeabi_v7a_release:1.0.0-45f6e009110df4f34ec2cf99f63cf73b71b7a420'
+    implementation 'io.flutter:arm64_v8a_release:1.0.0-45f6e009110df4f34ec2cf99f63cf73b71b7a420'
+    implementation 'io.flutter:x86_64_release:1.0.0-45f6e009110df4f34ec2cf99f63cf73b71b7a420'
 }

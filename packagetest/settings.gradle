@@ -3,15 +3,12 @@ pluginManagement {
         google()
         mavenCentral()
         maven {
-            url '..\\flutter_module\\build\\host\\outputs\\repo'
-        }
-        maven {
             url System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com" + "/download.flutter.io"
         }
         gradlePluginPortal()
-//        flatDir {
-//            dirs 'app/src/main/libs'
-//        }
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
@@ -20,15 +17,12 @@ dependencyResolutionManagement {
     repositories {
         google()
         maven {
-            url '..\\flutter_module\\build\\host\\outputs\\repo'
-        }
-        maven {
-            url System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com" + "/download.flutter.io"
+            url "https://storage.googleapis.com/download.flutter.io"
         }
         mavenCentral()
-//        flatDir {
-//            dirs 'app/src/main/libs'
-//        }
+        flatDir {
+            dirs 'libs'
+        }
     }
 }
 
